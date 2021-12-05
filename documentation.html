@@ -1,0 +1,180 @@
+<!--
+    Hello there!
+    The Newspaper website demo version was made to test a CSS framework called Materialize. (link here: https://materializecss.com/)
+    You can use this template for personal or commercial use, but if you give me some credit that would be nice.
+    For customazation or any question send me an email from the bottom of this site. Thanks!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Newspaper free demo Website">
+    <meta name="keywords" content="HTML, CSS, Materialize, Template, demo">
+    <meta name="author" content="Emese Nagy">
+    <meta name="robots" content="noindex" >
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Newspeper-Single Article Free Demo">
+    <meta property="og:url" content="https://emese.one/newspaper/index.html"> <!--Change the website link to yours-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Newspeper-Single Article Free Demo">
+    <meta property="og:description" content="This template was made to test a CSS framework called Materialize. This template is free, you can not sell it as it is.">
+    <meta property="og:image" content="http://emese.one/newspaper/img/index-img.png">
+    <meta name="description" content="This template was made to test a CSS framework called Materialize. (link here: https://materializecss.com/)">
+    <link rel="icon" href="img/Logo.svg">
+    <meta name="twitter:image" content="img/index-img.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Here you can add your META tags, also your google analytics script-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Free google fonts used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;700&family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+    <title>Newspeper-Single Article Free Demo</title>
+</head>
+<body onload="myFunction()" id="single-article-body">
+    <div id="loader"> <!--MAGIC NO TAP TAP. (jokin')
+      The color of the loader, in this case a tea cup, is deffined by "var(--border-color)" . You can change that color on the CSS file, as be your main color in the design or you can change to a HEX, RGB, RGBA color code as well.-->
+        <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--border-color)" stroke-width="2"></path>
+            <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--border-color)" stroke-width="2"></path>
+            <path id="teabag" fill="var(--border-color)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+            <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--border-color)"></path>
+            <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--border-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+    </div>
+    
+    <div class="container" id="myDiv"> <!--Main content-->
+<!--HEADER SECTION START-->
+        <div class="row header-section mar-0">
+            <p class="left-align col s6">Author: <em>Emese Nagy</em> </p>
+            <p class="right-align col s6">2021.11.29</p>
+        </div>
+        <div class="row">
+            <div class="divider brown lighten-1"></div>
+            <div class="col hide-on-med-and-down m12 l4">
+                <h3 class="brown-text text-lighten-1">S10.50</h3>
+                <h4>Template by WM & E</h4>
+                <p>Materialize framework used. <br>
+                Easy to edit and customize. <br>
+                For personalization contact the creator.</p>
+            </div>
+            <div class="col s12 m12 l4 center-align">
+                <h1 class="brown-text text-lighten-1">gazeta</h1>
+                <h4>a newspaper for your information</h4>
+            </div>
+            <div class="col hide-on-med-and-down m12 l4 right-align">
+                <p>Template - Materialize</p>
+                <p>Landing page</p>
+                <p>Free Demo version</p>
+                <div class="between-text-divider right">
+                    <p class="number brown-text text-lighten-1 mar-0">&num;0001</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="divider brown lighten-1"></div>
+        <nav class=" z-depth-0">
+          <div class="nav-wrapper">
+            <div class="col s12">
+              <a href="index.html" class="breadcrumb brown-text text-darken-2"><span class="material-icons">home</span>Main Page</a>
+              <a href="single-article.html" class="breadcrumb brown-text text-darken-2"><span class="material-icons">
+                article</span>Article 1</a>
+            </div>
+          </div>
+        </nav>
+<!--HEADER SECTION ENDS-->
+
+<!--MAIN ARTICLE SECTION START-->
+<div class="row">
+  <div class="divider brown lighten-1"></div>
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4>Heading 4</h4>
+  <h5>Heading 5</h5>
+  <h6>Heading 6</h6>
+  <p>Pharagraph</p>
+  <div class="divider brown lighten-1"></div>
+  <div class="col s12">
+    <p>MATERIALIZE CSS framework used <a href="https://materializecss.com/getting-started.html">Go to website &#x2192;</a></p>
+  </div>
+  <div class="divider brown lighten-1"></div>
+  <div class="col s12">
+    <h4>
+      Change colors and fonts
+    </h4>
+    <p>
+      Change color theme with one click is very easy. Go to the "style.css" file to line 172. Change any of the HEX color code to the one desierd.
+    </p>
+    <p>You can change the used fonts and colors at the ":root". 
+      In case you change the fonts, don't forget to make changes at the HTML files as well.
+    </p>
+  </div>
+  <div class="divider brown lighten-1"></div>
+  <div class="col s12">
+    This is a demo version.
+    Free for personal use or commercial use.
+  </div>
+  
+  <div class="col s12 mar-top-3">
+    <div class="divider brown lighten-1"></div>
+    <p>
+      Images from: https://pixabay.com/ <br>
+      Free google fonts used.
+    </p>
+  </div>
+</div>
+
+<!--MAIN ARTICLE SECTION ENDS-->
+
+   
+
+      <footer>
+        <div class="divider brown lighten-1 mar-bot-3"></div>
+        <div class="col l12 m12 s12 center-align">
+            <h4>
+                Created with <span class="heart">&#x2764;</span> by Emese | Email contact <a href="mailto:emese@emese.one?subject=Newspaper Demo Template" target="_blank">Here</a>
+            </h4>
+        </div>
+      </footer>
+    </div>
+
+    <!--
+      MAGIC! Do NOT touch the lines bellow!
+    -->
+    <script>
+      /* Please work */
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+      }
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+     </script>
+
+     <script>
+       /* Parallax */
+       document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, 450);
+  });
+     </script>
+ 
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
+
+
+<!--
+   When I wrote this, only God and I understood what I was doing.
+   Now, ....God only knows!
+
+   Joking .... or am i? *gives side look*
+-->

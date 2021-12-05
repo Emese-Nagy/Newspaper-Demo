@@ -1,0 +1,266 @@
+<!--
+    Hello there!
+    The Newspaper website demo version was made to test a CSS framework called Materialize. (link here: https://materializecss.com/)
+    You can use this template with full permission, but if you give me some credit that would be nice.
+    For customazation or any question send me an email from the bottom of this site. Thanks!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Newspaper free demo Website">
+    <meta name="keywords" content="HTML, CSS, Materialize, Template, demo">
+    <meta name="author" content="Emese Nagy">
+    <meta name="robots" content="noindex" >
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Newspeper-Single Article Free Demo">
+    <meta property="og:url" content="https://emese.one/newspaper/index.html"> <!--Change the website link to yours-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Newspeper-Single Article Free Demo">
+    <meta property="og:description" content="This template was made to test a CSS framework called Materialize. This template is free, you can not sell it as it is.">
+    <meta property="og:image" content="http://emese.one/newspaper/img/index-img.png">
+    <meta name="description" content="This template was made to test a CSS framework called Materialize. (link here: https://materializecss.com/)">
+    <link rel="icon" href="img/Logo.svg">
+    <meta name="twitter:image" content="img/index-img.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Here you can add your META tags, also your google analytics script-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <!--Free google fonts used-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100;200;300;400;500;700&family=Playfair+Display+SC:wght@700&display=swap" rel="stylesheet">
+    <title>Newspeper-Single Article Free Demo</title>
+</head>
+<body onload="myFunction()" id="single-article-body">
+    <div id="loader"> <!--MAGIC NO TAP TAP. (jokin')
+      The color of the loader, in this case a tea cup, is deffined by "var(--border-color)" . You can change that color on the CSS file, as be your main color in the design or you can change to a HEX, RGB, RGBA color code as well.-->
+        <svg class="tea" width="37" height="48" viewbox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M27.0819 17H3.02508C1.91076 17 1.01376 17.9059 1.0485 19.0197C1.15761 22.5177 1.49703 29.7374 2.5 34C4.07125 40.6778 7.18553 44.8868 8.44856 46.3845C8.79051 46.79 9.29799 47 9.82843 47H20.0218C20.639 47 21.2193 46.7159 21.5659 46.2052C22.6765 44.5687 25.2312 40.4282 27.5 34C28.9757 29.8188 29.084 22.4043 29.0441 18.9156C29.0319 17.8436 28.1539 17 27.0819 17Z" stroke="var(--border-color)" stroke-width="2"></path>
+            <path d="M29 23.5C29 23.5 34.5 20.5 35.5 25.4999C36.0986 28.4926 34.2033 31.5383 32 32.8713C29.4555 34.4108 28 34 28 34" stroke="var(--border-color)" stroke-width="2"></path>
+            <path id="teabag" fill="var(--border-color)" fill-rule="evenodd" clip-rule="evenodd" d="M16 25V17H14V25H12C10.3431 25 9 26.3431 9 28V34C9 35.6569 10.3431 37 12 37H18C19.6569 37 21 35.6569 21 34V28C21 26.3431 19.6569 25 18 25H16ZM11 28C11 27.4477 11.4477 27 12 27H18C18.5523 27 19 27.4477 19 28V34C19 34.5523 18.5523 35 18 35H12C11.4477 35 11 34.5523 11 34V28Z"></path>
+            <path id="steamL" d="M17 1C17 1 17 4.5 14 6.5C11 8.5 11 12 11 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="var(--border-color)"></path>
+            <path id="steamR" d="M21 6C21 6 21 8.22727 19 9.5C17 10.7727 17 13 17 13" stroke="var(--border-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+    </div>
+    
+    <div class="container" id="myDiv"> <!--Main content-->
+<!--HEADER SECTION START-->
+        <div class="row header-section mar-0">
+            <p class="left-align col s6">Author: <em>Emese Nagy</em> </p>
+            <p class="right-align col s6">2021.11.29</p>
+        </div>
+        <div class="row">
+            <div class="divider brown lighten-1"></div>
+            <div class="col hide-on-med-and-down m12 l4">
+                <h3 class="brown-text text-lighten-1">S10.50</h3>
+                <h4>Template by WM & E</h4>
+                <p>Materialize framework used. <br>
+                Easy to edit and customize. <br>
+                For personalization contact the creator.</p>
+            </div>
+            <div class="col s12 m12 l4 center-align">
+                <h1 class="brown-text text-lighten-1">gazeta</h1>
+                <h4>a newspaper for your information</h4>
+            </div>
+            <div class="col hide-on-med-and-down m12 l4 right-align">
+                <p>Template - Materialize</p>
+                <p>Landing page</p>
+                <p>Free Demo version</p>
+                <div class="between-text-divider right">
+                    <p class="number brown-text text-lighten-1 mar-0">&num;0001</p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="divider brown lighten-1"></div>
+        <nav class=" z-depth-0">
+          <div class="nav-wrapper mar-bot-3">
+            <div class="col s12">
+              <a href="index.html" class="breadcrumb brown-text text-darken-2"><span class="material-icons">home</span>Main Page</a>
+              <a href="single-article.html" class="breadcrumb brown-text text-darken-2"><span class="material-icons">
+                article</span>Article 1</a>
+            </div>
+          </div>
+        </nav>
+<!--HEADER SECTION ENDS-->
+
+<!--MAIN ARTICLE SECTION START-->
+<div class="row main-article-section mar-top-3">
+  <div class="parallax-container">
+    <div class="parallax"><img src="/img/building.jpg"></div>
+  </div>
+  <h3 class="center-align brown-text text-lighten-1">Your article title <br> Lorem ipsum dolor sit amet consectetur.</h3>
+
+  <div class="col s12 m12 l12 left-align">
+    <div class="col s3 m3 l1">
+      <img src="img/emese-profilePic.jpg" alt="Emese profile picture" class="circle responsive-img">
+    </div>
+    <div class="col s9 m9 l11">
+      <p><small>Author: Emese Nagy</small></p>
+      <p><small>Tags: News, Sport, Politics |  2021.December.04</small></p>
+    </div>
+  </div>
+
+  <div class="col s12 mar-bot-2">
+    <div class="divider brown lighten-1"></div>
+  </div>
+
+  <div class="col l12 m12 s12 article-header-bg">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam, aspernatur praesentium harum eveniet sunt autem nulla ullam! Alias, quibusdam inventore? Cum consequatur corrupti omnis molestiae officiis perspiciatis ipsam iste animi.</p>
+  </div>
+
+  <div class="col l6 m6 s12">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat necessitatibus accusamus, explicabo tenetur enim beatae inventore quia quos sed. Ab a ipsa officia quaerat rerum, qui repudiandae quo numquam expedita autem, enim vitae ut. Inventore porro cumque quasi nulla cum dignissimos animi a excepturi, quae facere, nam aliquam? Harum, inventore.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quos animi molestias minima inventore quasi culpa dicta excepturi necessitatibus, quam veritatis eligendi voluptatum accusantium quidem, aliquid commodi doloribus veniam rem odio ipsam. Voluptate voluptatem doloribus reprehenderit cum optio beatae similique numquam molestias in, animi eius exercitationem harum laudantium accusamus commodi.</p>
+
+    <img class="responsive-img" src="./img/horse.jpg" alt="Horse Image">
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus ipsum itaque, sed, minus officiis officia totam voluptatem laudantium odio suscipit fugit nobis dignissimos ad libero architecto similique quae! Fuga, a corporis impedit harum non quam quos iure maiores suscipit at, ipsum magni mollitia inventore cum quasi, rerum dolores ratione!</p>
+    
+  </div>
+
+
+  <div class="col l6 m6 s12">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor recusandae sed quam nihil adipisci rerum officia architecto tenetur, nobis ea cupiditate, doloribus dignissimos corporis illum vero explicabo, ipsa accusamus quis? Inventore totam ullam nihil eius optio! Inventore ipsam perspiciatis mollitia qui hic, deserunt neque? Libero molestiae maiores dignissimos voluptas vel.</p>
+   
+    
+    <p class="wrapped-text center-align"><span>&#x275D;</span> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tenetur molestias fugit. Aliquid ad cumque mollitia magni neque consequatur distinctio sequi. Tempore quis illo cumque ex. Natus non esse ea itaque atque et, hic dicta.</p>
+   
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At beatae eligendi quasi sit cum nihil? Labore consectetur nostrum nihil ex, asperiores ipsum fugiat iusto! Velit amet numquam provident dolor dicta animi accusantium distinctio officia. Corporis explicabo quos omnis! Dignissimos facere atque molestiae? Eveniet suscipit debitis odio enim voluptates ad officiis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsa soluta aspernatur inventore doloribus sequi iure recusandae aliquid illo, sint quos consectetur maiores maxime, nisi numquam optio, natus vel. Nihil omnis ex molestiae, possimus atque nobis aperiam temporibus quasi corporis enim architecto aliquam beatae animi soluta id tempore quas culpa?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem delectus, maxime perferendis alias ut eos quo! Placeat soluta laudantium, dignissimos quis, minima inventore beatae nihil distinctio quas quos culpa officia aut assumenda cum adipisci nesciunt ad tempore maiores. Itaque, nulla!</p>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo delectus nostrum a eum ducimus suscipit facilis magnam voluptatem voluptatum saepe sapiente tempora officiis asperiores quae cum molestias tenetur commodi fugit, pariatur similique. Assumenda corporis, quibusdam eum dolorem suscipit ab eligendi voluptatum blanditiis iste ex sint impedit at, ea similique odit!
+    </p>
+  </div>
+
+</div>
+
+<!--MAIN ARTICLE SECTION ENDS-->
+
+   <!--LATEST NEWS SECTION START-->
+   <div class="row cards-section">
+    <div class="col l12 m12 s12 card-section-title mar-bot-3 center-align">
+        <h3>latest news</h3>
+    </div>
+      <div class="col l3 m12 s12">
+        <div class="card">
+            <div class="card-image">
+              <img src="img/new-york.jpg">
+              <span class="card-title">Documentation</span>
+            </div>
+            <div class="card-content">
+              <p>You can learn about this demo site elements and classes, also little tips how you can easily personalize this demo template to fit to your needs.</p>
+            </div>
+            <div class="card-action">
+              <a href="documentation.html">Documentation &#x2192;</a>
+            </div>
+          </div>
+      </div>
+
+      <div class="col l3 m12 s12">
+        <div class="card">
+            <div class="card-image">
+              <img src="img/hall.jpg">
+              <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link &#x2192;</a>
+            </div>
+          </div>
+      </div>
+
+     
+        <div class="col l3 m12 s12">
+            <div class="card">
+                <div class="card-image">
+                  <img src="img/new-york.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link &#x2192;</a>
+                </div>
+              </div>
+          </div>
+
+          <div class="col l3 m12 s12">
+            <div class="card">
+                <div class="card-image">
+                  <img src="img/hall.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link &#x2192;</a>
+                </div>
+              </div>
+          </div>
+  </div>
+<!--LATEST NEWS SECTION END-->
+
+      <footer>
+        <div class="divider brown lighten-1 mar-bot-3"></div>
+        <div class="col l12 m12 s12 center-align">
+            <h4>
+                Created with <span class="heart">&#x2764;</span> by Emese | Email contact <a href="mailto:emese@emese.one?subject=Newspaper Demo Template" target="_blank">Here</a>
+            </h4>
+        </div>
+      </footer>
+    </div>
+
+    <!--
+      MAGIC! Do NOT touch the lines bellow!
+    -->
+    <script>
+      /* Please work */
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 1000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+      }
+      </script>
+     
+
+     <script>
+       /* Parallax */
+       document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, 450);
+  });
+     </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
+
+
+<!--
+   When I wrote this, only God and I understood what I was doing.
+   Now, ....God only knows!
+
+   Joking .... or am i? *gives side look*
+-->
